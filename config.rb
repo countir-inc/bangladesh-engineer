@@ -79,3 +79,9 @@ configure :build do
     system 'mv build docs'
   end
 end
+
+helpers do
+  def image_url(source)
+    "https://countir-inc.github.io" + image_path(source)
+  end
+end
